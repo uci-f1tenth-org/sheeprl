@@ -22,7 +22,7 @@ class AutoDRIVEWrapper(gym.Wrapper):
     # (e.g. position, velocity, heading, lidar, etc.)
         self.observation_space = spaces.Dict(
             {
-                "state": spaces.Box(low=-np.inf, high=np.inf, shape=(57,), dtype=np.float32),
+                "state": spaces.Box(low=-np.inf, high=np.inf, shape=(55,), dtype=np.float32),
             }
         )
 # Two discrete action channels (each with 3 options)
